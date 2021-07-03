@@ -83,11 +83,11 @@ impl Site {
         ctx.set_font_size(12.0);
         ctx.move_to(8.0, 20.0);
         if let Err(_e) = ctx.show_text(format!("   Focus: [{}, {}]", self.0, self.1).as_str()) {
-            // TODO handle eror
+            // TODO handle error
         }
         ctx.move_to(8.0, 34.0);
         if let Err(_e) = ctx.show_text(format!("Directrix: {}", self.2).as_str()) {
-            // TODO handle eror
+            // TODO handle error
         }
     }
 }
